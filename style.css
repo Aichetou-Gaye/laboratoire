@@ -17,37 +17,48 @@ header {
     background-color: white;
     text-align: center;
     font-size: 15px;
+    height: 50px;
     border: 1px solid #bd0e0e5e;
-    box-shadow: 0 0 10 #bd0e0e5e ;
-    margin-bottom: 50px;
+    box-shadow: 5px 5px 5px 0 rgba(189, 14, 14, 0.37);
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 30px;
+    margin: 20px 30px;
+    padding-top: 20px;
+}
+.title h1 {
+    top: 50%;
 }
 .labo {
+    margin:0 30px;
     display: grid;
     grid-template-columns: repeat(18, 1fr) ;
     grid-template-rows: (7, 60px);
+    border: 1px solid #bd0e0e5e;
+    box-shadow: 5px 5px 5px 0 rgba(189, 14, 14, 0.37);
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 30px;
 }
-.labo div {
+.labo p {
     border: 1px solid #ccc;
-    border-collapse: collapse;
-    font-weight: 900;
-    align-items: center;
     text-align: center;
-    height: 50px;
-    width: 50px;
+    padding-top: 20px;
+    font-weight: 900;
+    height: 40px;
+    width: 60px;
     cursor: pointer;
 }
-.labo div:hover {
+.labo p:hover {
     font-weight: 100;
     color: white;
     background-color: #bd0e0e5e;
 }
 footer {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     font-size: 10px;
-    padding: 0;
-    margin-bottom: 0px;
     position: absolute;
     bottom: 0;
+    width: 100%;
 }
