@@ -12,6 +12,7 @@ body {
     background-color: white;
     place-content: center;
     height:800px;
+    width: 1150px;
 }
 header {
     display: flex;
