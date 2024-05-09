@@ -3,62 +3,92 @@
     padding: 0;
 }
 body {
+    position: relative;
+    padding: 5px 100px;
+    background-color: rgba(128, 128, 128, 0.274);
+    justify-content: center;
+}
+.container {
     background-color: white;
-    font-family: 'Courier New', Courier, monospace;
+    place-content: center;
+    height:800px;
 }
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 10px;
-    margin-bottom: 100px;
+    position: absolute;
+    top: 5px;
+    width: 85%;
+}
+header a {
+    text-decoration: none;
+    color: black;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    padding : 0 50px;
+    font-family: 'Courier New', Courier, monospace;
 }
 .title {
     background-color: white;
-    text-align: center;
-    font-size: 15px;
-    height: 50px;
-    border: 1px solid #bd0e0e5e;
-    box-shadow: 5px 5px 5px 0 rgba(189, 14, 14, 0.37);
+    height: 40px;
+    border: 1px #bd0e0e5e;
+    box-shadow: 4px 6px 5px 4px rgba(189, 14, 14, 0.37);
     border-top-left-radius: 16px;
     border-bottom-right-radius: 30px;
-    margin: 20px 30px;
-    padding-top: 20px;
+    text-align: center;
+    align-content: center;
 }
-.title h1 {
-    top: 50%;
+.title .en-tete {
+    font-size: 20px;
+    font-weight: 900;
 }
 .labo {
-    margin:0 30px;
     display: grid;
     grid-template-columns: repeat(18, 1fr) ;
-    grid-template-rows: (7, 60px);
+    grid-template-rows: repeat(7, 60px);
     border: 1px solid #bd0e0e5e;
-    box-shadow: 5px 5px 5px 0 rgba(189, 14, 14, 0.37);
-    border-top-left-radius: 16px;
-    border-bottom-right-radius: 30px;
+    box-shadow: 5px 6px 5px 2px rgba(189, 14, 14, 0.37);
+    border-radius: 16px;
+    margin-top: 20px;
 }
-.labo p {
+.labo .lettre {
     border: 1px solid #ccc;
     text-align: center;
-    padding-top: 20px;
+    align-content: center;
     font-weight: 900;
-    height: 40px;
-    width: 60px;
     cursor: pointer;
 }
-.labo p:hover {
+.labo .lettre:hover {
     font-weight: 100;
     color: white;
     background-color: #bd0e0e5e;
 }
+.esp-1 {
+    grid-column: 2 /span 16;
+    grid-row: 1;
+}
+.esp-2 {
+    grid-column: 3/span 10;
+    grid-row: 2;
+}
+.esp-3 {
+    grid-column: 3/span 10;
+    grid-row: 3;
+}
+.H {border-top-left-radius: 10px;}
+.He {border-top-right-radius: 10px;}
+.Ra {border-bottom-left-radius: 10px;}
+
 footer {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     font-size: 10px;
     position: absolute;
-    bottom: 0;
-    width: 100%;
+    bottom: 5px;
+    width: 85%;
 }
